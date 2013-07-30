@@ -613,7 +613,7 @@ collection.group([], {}, {"count":0}, "function (obj, prev) { prev.count++; }", 
 Equivalent to
 
 ```js
-collection.update({_id, ObjectID.createFromHexString(id)}, ..., callback);
+collection.update({_id : ObjectID.createFromHexString(id)}, ..., callback);
 ```
 
 See [Collection.update](https://github.com/christkv/node-mongodb-native/blob/master/docs/insert.md)
